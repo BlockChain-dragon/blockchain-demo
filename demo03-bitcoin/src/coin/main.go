@@ -1,11 +1,14 @@
 package main
 
 import (
-	. "../core"
-	"fmt"
+	"../core"
 )
 
 func main() {
-	NewBlock("asd", []byte{})
-	fmt.Printf("1111")
+	bc := core.NewBlockchain()
+	bc.AddBlock("hello world ~!")
+	bc.AddBlock("hello flower")
+
+	bc.PrintBlockchain()
+
 }

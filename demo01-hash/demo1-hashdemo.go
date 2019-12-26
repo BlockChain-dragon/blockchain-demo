@@ -3,11 +3,17 @@ package main
 import (
 	"crypto/sha256"
 	"encoding/hex"
+	"fmt"
 	"log"
+	"math"
 )
 
 func main() {
-	calculateHash("test`1")
+	var max222 int64 = math.MaxInt64
+	// 9223372036854775807
+	fmt.Print(max222)
+
+	//calculateHash("test`1")
 }
 
 func calculateHash(toBeHashed string) string {
