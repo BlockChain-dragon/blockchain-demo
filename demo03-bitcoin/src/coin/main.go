@@ -6,9 +6,8 @@ import (
 
 func main() {
 	bc := core.NewBlockchain()
-	bc.AddBlock("hello world ~!")
-	bc.AddBlock("hello flower")
+	defer bc.Db.Close()
 
-	bc.PrintBlockchain()
-
+	cli := core.CLI{bc}
+	cli.Run()
 }
