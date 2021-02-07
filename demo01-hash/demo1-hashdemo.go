@@ -13,7 +13,7 @@ func main() {
 	// 9223372036854775807
 	fmt.Print(max222)
 
-	//calculateHash("test`1")
+	calculateHash("test`1")
 }
 
 func calculateHash(toBeHashed string) string {

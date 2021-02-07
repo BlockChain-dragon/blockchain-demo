@@ -16,7 +16,7 @@ func (cli *CLI) printUsage() {
 	fmt.Println("	createwallet                        -- Generates a new key-pair and saves it into the wallet file")
 	fmt.Println("	getbalance -address ADDRESS         -- Get balance of ADDRESS")
 	fmt.Println("	listaddresses                       -- Lists all addresses from the wallet file")
-	fmt.Println("	printchain                          --print all the blocks of the blockchain ")
+	fmt.Println("	printchain                          -- print all the blocks of the blockchain ")
 	fmt.Println("	send -from [FROMADDRESSES] -to [TOADDRESSES] -amount [AMOUNT] -- Send AMOUNT of coins from FROMADDRESS to TOADDRESS ")
 }
 

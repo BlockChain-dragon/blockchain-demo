@@ -1,5 +1,7 @@
 package core
 
+import "fmt"
+
 func (cli *CLI) CreateWallet() {
 	wallets := GetWallets() //获取钱包集合对象
 	/*
@@ -19,5 +21,5 @@ func (cli *CLI) CreateWallet() {
 	*/
 	//delete(wallets.WalletMap,"1MaU1Q1LFwxHAbx4gfkVYSpEs2qDBmbV7c")
 	wallets.CreateNewWallets()
-	//fmt.Println("钱包：", wallets.WalletMap)
+	fmt.Println("钱包：", wallets.WalletMap)
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../core"
+	"./core"
 	"crypto/sha256"
 	"fmt"
 	"math/big"
@@ -18,6 +18,11 @@ func main() {
 	//leve 4
 	cli := core.CLI{}
 	cli.Run()
+	//arr := "[HtJve4MwW4LVko3yjkj3UUvzXsuGHb1Yq]"
+	//srtArr := core.JSONToArray(arr)
+	//for _,value := range srtArr  {
+	//	println(value)
+	//}
 
 }
 
