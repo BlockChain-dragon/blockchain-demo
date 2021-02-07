@@ -116,7 +116,6 @@ func (cli *CLI) Run() {
 	//4.4 转账交易
 	if sendCmd.Parsed() {
 		if *sendFrom == "" || *sendTo == "" || *sendAmount == "" {
-			fmt.Println("转账信息有误")
 			cli.printUsage()
 			os.Exit(1)
 		}
